@@ -5,7 +5,7 @@ const pgp = require('pg-promise')({
 });
 
 const options = {
-    host: 'drona.db.elephantsql.com ',
+    host: 'drona.db.elephantsql.com',
     database: 'trusuiio',
     user: 'trusuiio',
     password: 'GQzdHZpS4TBPehS8rzk2KzXDA5hzFs9K'
