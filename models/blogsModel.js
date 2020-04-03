@@ -18,10 +18,10 @@ class blogsModel{
     }
   }   
 
-  static async getBlogsByImageId(blog_id) {
+  static async getCommentsById(blogs_id) {
       try {
         const response = await db.any(
-          `SELECT * FROM comments WHERE id = ${blog_id};`
+          `SELECT comment FROM comments WHERE blogs_id = ${blogs_id};`
         );
         return response;
       } catch (error) {
