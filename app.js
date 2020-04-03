@@ -5,7 +5,7 @@ const logger = require('morgan');
 const cors = require('cors');
 
 const indexRouter = require('./routes/index');
-// const singlePostRouter = require('./routes/blogs');
+const commentRouter = require('./routes/comments');
 
 const corsOptions = {
     origin: "*",
@@ -27,6 +27,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors(corsOptions));
 
 app.use('/', indexRouter);
-// app.use('/blogs', singlePostRouter);
+app.use('/posts/comments', commentRouter);
 
 module.exports = app;
