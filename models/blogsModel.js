@@ -27,9 +27,8 @@ class blogsModel{
       } catch (error) {
         console.error("ERROR: ", error);
         return error;
-      }
+    }
   }
-
 }
 
 module.exports = blogsModel;
